@@ -1,0 +1,13 @@
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    nav {
+        position: fixed;
+    }
+
+    section {
+        height: 200px;
+    }
+</style>
