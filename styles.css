@@ -1,13 +1,37 @@
-<style>
-    html {
-        scroll-behavior: smooth;
-    }
 
-    nav {
-        position: fixed;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-    section {
-        height: 200px;
-    }
-</style>
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos da navbar */
+nav {
+    position: fixed;
+    inset: 0 auto auto 0;
+    width: 100%;
+    background: #000;
+    border-bottom: 3px solid #f00;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background: #f00;
+    color: #000;
+}
+
+section {
+    height: 200px;
+    scroll-margin-top: 60px;
+}
