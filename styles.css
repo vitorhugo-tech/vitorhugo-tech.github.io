@@ -22,6 +22,7 @@ nav {
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    z-index: 999;
 }
 
 nav a {
@@ -38,11 +39,60 @@ nav a:hover {
     color: #000;
 }
 
-#top {
+/* Estilos do header */
+header {
     padding-top: 60px;
+    /* TODO: substituir por um background mais elaborado */
+    background-color: dimgrey;
 }
 
-#top, section {
+header > div {
+    padding: 60px 0;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foto {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 30px;
+    animation: rotate 3s ease-in-out infinite alternate;
+}
+
+#titulo {
+    display: inline-block;
+    background: #f00;
+    padding: 20px 40px;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 0 #000;
+    transform: rotate(-3deg);
+    animation: fadeInLeft 1s ease-out forwards, float 3s ease-in-out infinite alternate;
+    animation-delay: 0s, 1s;
+    margin-left: 30px;
+    position: relative;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#subtitulo {
+    background: #fff;
+    color: #000;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: 3px solid #000;
+    box-shadow: 5px 5px 0 #ff0000;
+    transform: rotate(-2deg) skewX(-3deg);
+    animation: fadeInRight 1s ease-out forwards, float 4s ease-in-out infinite alternate;
+    animation-delay: 0s, 1s;
+    margin: 0;
+}
+
+section {
     height: 200px;
     scroll-margin-top: 60px;
 }
@@ -77,4 +127,45 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 0.8em;
+}
+
+/* Animações */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px) skewX(-10deg) rotate(-5deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) skewX(-3deg) rotate(-3deg);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px) skewX(-10deg) rotate(-5deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) skewX(-3deg) rotate(-3deg);
+    }
+}
+
+@keyframes float {
+    from {
+        transform: rotate(-2deg) translateY(0) skewX(-3deg);
+    }
+    to {
+        transform: rotate(-1deg) translateY(-5px) skewX(-3deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-1deg);
+    }
+    to {
+        transform: rotate(1deg);
+    }
 }
