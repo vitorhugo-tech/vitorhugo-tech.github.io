@@ -16,6 +16,7 @@ body {
     color: var(--cor-realce);
     font-family: 'Anton', sans-serif;
     margin: 0;
+    letter-spacing: 0.5px;
 }
 
 /* Estilos da navbar */
@@ -41,7 +42,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #var(--cor-auxiliar);
+    background: var(--cor-auxiliar);
     color: var(--cor-principal);
 }
 
@@ -105,9 +106,49 @@ header div {
 /* Estilos das seções */
 section {
     scroll-margin-top: 60px;
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
     display: flex;
     justify-content: center;
+}
+
+#habilidades > div {
+    padding: 0 20px 20px 20px;
+    width: 60%;
+    align-self: center;
+    background-color: dimgrey;
+    border: 2px solid var(--cor-realce);
+    border-radius: 15px;
+}
+
+.habilidades-container h2, .habilidades-container h3 {
+    justify-self: center;
+}
+
+.badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.badge {
+    color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    background: var(--cor-realce);
+    padding: 8px 14px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px var(--cor-principal);
+    font-size: 0.95rem;
+    transition: transform 0.2s ease;
+}
+
+.badge:hover {
+    transform: scale(1.05);
+}
+
+.badge i {
+    font-size: 1.2rem;
 }
 
 /* Estilos fim da página */
