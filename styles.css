@@ -1,13 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+:root {
+    --cor-principal: #000;
+    --cor-auxiliar: #f00;
+    --cor-realce: #fff;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #1b1b1b;
-    color: #fff;
+    background-color: var(--cor-principal);
+    color: var(--cor-realce);
     font-family: 'Anton', sans-serif;
     margin: 0;
 }
@@ -17,8 +23,8 @@ nav {
     position: fixed;
     inset: 0 auto auto 0;
     width: 100%;
-    background: #000;
-    border-bottom: 3px solid #f00;
+    background: var(--cor-principal);
+    border-bottom: 3px solid var(--cor-auxiliar);
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -26,7 +32,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--cor-realce);
     text-decoration: none;
     margin: 0 20px;
     font-size: 1.1em;
@@ -35,13 +41,17 @@ nav a {
 }
 
 nav a:hover {
-    background: #f00;
-    color: #000;
+    background: #var(--cor-auxiliar);
+    color: var(--cor-principal);
 }
 
 /* Estilos do header */
 header {
     padding-top: 60px;
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* TODO: substituir por um background mais elaborado */
     background-color: dimgrey;
 }
@@ -57,7 +67,7 @@ header div {
 }
 
 #foto {
-    border: 2px solid #fff;
+    border: 2px solid var(--cor-realce);
     border-radius: 50%;
     margin-right: 30px;
     animation: rotate 3s ease-in-out infinite alternate;
@@ -65,10 +75,10 @@ header div {
 
 #titulo {
     display: inline-block;
-    background: #f00;
+    background: var(--cor-auxiliar);
     padding: 20px 40px;
-    border: 5px solid #fff;
-    box-shadow: 5px 5px 0 #000;
+    border: 5px solid var(--cor-realce);
+    box-shadow: 5px 5px 0 var(--cor-principal);
     transform: rotate(-3deg);
     animation: fadeInLeft 1s ease-out forwards, float 3s ease-in-out infinite alternate;
     animation-delay: 0s, 1s;
@@ -80,49 +90,54 @@ header div {
 }
 
 #subtitulo {
-    background: #fff;
-    color: #000;
+    background: var(--cor-realce);
+    color: var(--cor-principal);
     padding: 10px 15px;
     font-weight: bold;
-    border: 3px solid #000;
-    box-shadow: 5px 5px 0 #ff0000;
+    border: 3px solid var(--cor-principal);
+    box-shadow: 5px 5px 0 var(--cor-auxiliar);
     transform: rotate(-2deg) skewX(-3deg);
     animation: fadeInRight 1s ease-out forwards, float 4s ease-in-out infinite alternate;
     animation-delay: 0s, 1s;
     margin: 0;
 }
 
+/* Estilos das seções */
 section {
-    height: 200px;
     scroll-margin-top: 60px;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
 }
 
+/* Estilos fim da página */
 #scrollTopBtn {
     position: fixed;
     bottom: 40px;
     right: 40px;
     display: none;
-    background-color: #f00;
-    color: #fff;
+    background-color: var(--cor-auxiliar);
+    color: var(--cor-realce);
     border: none;
     padding: 12px 18px;
     border-radius: 50%;
     font-size: 18px;
     cursor: pointer;
-    box-shadow: 0 4px 6px #000;
+    box-shadow: 0 4px 6px var(--cor-principal);
     transition: background-color 0.3s, transform 0.3s;
     text-decoration: none;
     z-index: 1000;
 }
 
 #scrollTopBtn:hover {
-    background-color: #c00;
+    filter: brightness(0.8);
     transform: scale(1.1);
 }
 
 footer {
-    background: #000;
-    color: #fff;
+    background: var(--cor-auxiliar);
+    filter: saturate(0.5);
+    color: var(--cor-realce);
     font-family: sans-serif;
     display: flex;
     justify-content: center;
