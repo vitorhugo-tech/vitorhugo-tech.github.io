@@ -14,13 +14,13 @@
         <a href="#inicio">Início</a>
         <a href="#sobre">Sobre</a>
         <a href="#habilidades">Habilidades</a>
-        <a href="#portfolio">Portfólio</a>
+        <a href="#projetos">Projetos</a>
         <a href="#contato">Contato</a>
     </nav>
     <main>
         <header id="inicio">
             <div>
-                <img id="foto" src="images/photo-alternate.png" alt="Foto" height="300" width="300"/>
+                <img id="foto" src="images/photo-alternate.png" alt="Foto" height="300" width="300" loading="lazy"/>
                 <span>
                     <h1 id="titulo">Vitor Hugo</h1>
                     <div>
@@ -57,7 +57,7 @@
                     <span class="badge"><i class="devicon-php-plain colored"></i> PHP</span>
                     <span class="badge"><i class="devicon-laravel-plain colored"></i> Laravel</span>
                     <span class="badge"><i class="devicon-symfony-original colored"></i> Symfony</span>
-                    <span class="badge"><i class="devicon-symfony-original colored"></i> APIs RESTful/SOAP</span>
+                    <span class="badge"><i class="fa-solid fa-gears"></i> APIs RESTful/SOAP</span>
                 </div>
                 <h3>Bancos de dados</h3>
                 <div class="badge-container">
@@ -80,10 +80,82 @@
                 </div>
             </div>
         </section>
-        <section id="portfolio">
+        <section id="projetos">
             <div>
-                <h2>Portfólio</h2>
-                <p>Meus projetos.</p>
+                <h2>Projetos</h2>
+            </div>
+
+            <div class="grid-projetos">
+                <article class="projeto-card">
+                    <a class="projeto-thumb" href="#" target="_blank">
+                        <img
+                            src="images/symfony.png"
+                            alt="Imagem do projeto de API"
+                            loading="lazy"
+                        />
+                    </a>
+
+                    <div class="projeto-conteudo">
+                        <h3 class="projeto-titulo">CRUD API</h3>
+                        <p class="projeto-descricao">
+                        Breve descrição do projeto: o que ele faz, qual problema resolve e qual foi seu papel no desenvolvimento.
+                        </p>
+
+                        <ul class="projeto-techs">
+                            <li><i class="devicon-php-plain colored"></i> PHP</li>
+                            <li><i class="devicon-symfony-original colored"></i> Symfony</li>
+                            <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
+                            <li><i class="devicon-doctrine-plain colored"></i> Doctrine ORM</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="projeto-card">
+                    <a class="projeto-thumb" href="#" target="_blank">
+                        <img
+                            src="images/resume-maker.png"
+                            alt="Imagem do criador de currículos"
+                            loading="lazy"
+                        />
+                    </a>
+
+                    <div class="projeto-conteudo">
+                        <h3 class="projeto-titulo">Criador de currículos</h3>
+                        <p class="projeto-descricao">
+                        Uma ferramenta web para criar e personalizar currículos profissionais rapidamente.
+                        </p>
+
+                        <ul class="projeto-techs">
+                            <li><i class="devicon-vitejs-plain colored"></i> Vite</li>
+                            <li><i class="devicon-typescript-original colored"></i> TypeScript</li>
+                            <li><i class="devicon-vuejs-plain colored"></i> Vue.js</li>
+                            <li><i class="devicon-tailwindcss-original colored"></i> Tailwind CSS</li>
+                            <li><i class="fa-solid fa-font-awesome"></i> Font Awesome</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="projeto-card">
+                    <a class="projeto-thumb" href="#" target="_blank">
+                        <img
+                            src="images/game.png"
+                            alt="Imagem do protótipo de jogo"
+                            loading="lazy"
+                        />
+                    </a>
+
+                    <div class="projeto-conteudo">
+                        <h3 class="projeto-titulo">Protótipo de jogo</h3>
+                        <p class="projeto-descricao">
+                        Um pequeno protótipo no estilo Sokoban que desenvolvo no meu tempo livre para aprender a linguagem C.
+                        </p>
+
+                        <ul class="projeto-techs">
+                            <li><i class="devicon-c-plain colored"></i> C</li>
+                            <li><i class="fa-solid fa-gamepad"></i> Raylib</li>
+                        </ul>
+                    </div>
+                </article>
             </div>
         </section>
         <section  id="contato">

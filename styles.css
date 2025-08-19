@@ -19,6 +19,10 @@ body {
     letter-spacing: 0.5px;
 }
 
+i {
+    font-size: 1rem;
+}
+
 /* Estilos da navbar */
 nav {
     position: fixed;
@@ -104,7 +108,7 @@ header div {
 }
 
 /* Estilos das seções */
-section {
+section:not(#projetos) {
     scroll-margin-top: 60px;
     margin-bottom: 60px;
     min-height: calc(100vh - 60px);
@@ -135,13 +139,11 @@ section {
 
 .badge {
     color: var(--cor-principal);
-    display: flex;
-    align-items: center;
     background: var(--cor-realce);
     padding: 8px 14px;
     border-radius: 20px;
     box-shadow: 0 2px 5px var(--cor-principal);
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     transition: transform 0.2s ease;
 }
 
@@ -149,8 +151,81 @@ section {
     transform: scale(1.05);
 }
 
-.badge i {
-    font-size: 1.2rem;
+/* Estilos seção projetos */
+#projetos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+#projetos h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.projeto-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--cor-auxiliar);
+    filter: saturate(0.6);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.projeto-thumb img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.projeto-conteudo {
+    padding: 1rem 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.projeto-titulo {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.projeto-descricao {
+    flex: 1;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.projeto-techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.projeto-techs li {
+    background: #f0f0f0;
+    border-radius: 999px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #333;
 }
 
 /* Estilos seção contato */
