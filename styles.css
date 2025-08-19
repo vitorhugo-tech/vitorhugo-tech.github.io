@@ -111,6 +111,7 @@ section {
     justify-content: center;
 }
 
+/* Estilos seção habilidades */
 #habilidades > div {
     padding: 0 20px 20px 20px;
     width: 60%;
@@ -149,6 +150,72 @@ section {
 
 .badge i {
     font-size: 1.2rem;
+}
+
+/* Estilos seção contato */
+#contato {
+    padding: 60px 20px;
+}
+
+#contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#contato p {
+    margin-bottom: 40px;
+}
+.contato-info {
+    margin-bottom: 20px;
+}
+
+.contato-info a {
+    font-size: 2rem;
+    color: var(--cor-realce);
+    padding: 10px;
+    text-decoration: none;
+}
+
+.contato-info a:hover {
+    filter: brightness(0.7);
+}
+
+.contato-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contato-form label {
+    margin-bottom: 5px;
+}
+
+.contato-form input, .contato-form textarea {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.contato-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: var(--cor-auxiliar);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contato-form button:hover {
+    filter: saturate(0.8);
 }
 
 /* Estilos fim da página */

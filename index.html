@@ -6,6 +6,7 @@
     <title>Vitor Hugo - Portfólio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -56,7 +57,7 @@
                     <span class="badge"><i class="devicon-php-plain colored"></i> PHP</span>
                     <span class="badge"><i class="devicon-laravel-plain colored"></i> Laravel</span>
                     <span class="badge"><i class="devicon-symfony-original colored"></i> Symfony</span>
-                    <span class="badge">APIs RESTful/SOAP</span>
+                    <span class="badge"><i class="devicon-symfony-original colored"></i> APIs RESTful/SOAP</span>
                 </div>
                 <h3>Bancos de dados</h3>
                 <div class="badge-container">
@@ -85,10 +86,38 @@
                 <p>Meus projetos.</p>
             </div>
         </section>
-        <section id="contato">
-            <div>
+        <section  id="contato">
+            <!-- TODO: Implementar funcionalidade do formulário -->
+            <div class="contato-container">
                 <h2>Contato</h2>
-                <p>Formas de contato.</p>
+                <p>Sinta-se livre para me contactar caso queira conversar sobre meus trabalhos.</p>
+
+                <div>
+                    <div class="contato-info">
+                        <a href="mailto:vitorhugo-57@hotmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/vitorhugo-dev-1" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/vitorhugo-dev" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+
+                    <form class="contato-form">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mesagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
             </div>
         </section>
         <a id="scrollTopBtn" href="#inicio" title="Go to top">&#x1F809;</a>
