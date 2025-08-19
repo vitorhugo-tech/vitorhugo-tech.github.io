@@ -106,6 +106,7 @@ header div {
 /* Estilos das seções */
 section {
     scroll-margin-top: 60px;
+    margin-bottom: 60px;
     min-height: calc(100vh - 60px);
     display: flex;
     justify-content: center;
@@ -154,7 +155,7 @@ section {
 
 /* Estilos seção contato */
 #contato {
-    padding: 60px 20px;
+    padding: 0px 20px;
 }
 
 #contato h2 {
@@ -198,10 +199,16 @@ section {
 .contato-form input, .contato-form textarea {
     margin-bottom: 20px;
     padding: 12px;
-    border: none;
+    border: 1px solid var(--cor-realce);
     border-radius: 6px;
     font-size: 1rem;
     font-family: sans-serif;
+    background-color: dimgrey;
+    color: var(--cor-realce);
+
+    &::placeholder {
+        color: #969696ff;
+    }
 }
 
 .contato-form button {
@@ -209,6 +216,8 @@ section {
     border: none;
     border-radius: 6px;
     background: var(--cor-auxiliar);
+    color: var(--cor-realce);
+    font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s;
