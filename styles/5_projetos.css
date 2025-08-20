@@ -1,7 +1,12 @@
 #projetos {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
+    margin: 0px auto 60px auto;
+    scroll-margin-top: 70px;
+    min-height: calc(100vh - 60px);
+}
+
+#projetos  h3, #projetos p{
+    text-shadow: 1px 1px 2px var(--cor-principal);
 }
 
 #projetos h2 {

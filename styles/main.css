@@ -22,11 +22,15 @@ body {
     color: var(--cor-realce);
     font-family: 'Anton', sans-serif;
     margin: 0;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.7px;
 }
 
 i {
     font-size: 1rem;
+}
+
+h2, h3 {
+    margin: 10px 0;
 }
 
 section:not(#projetos) {

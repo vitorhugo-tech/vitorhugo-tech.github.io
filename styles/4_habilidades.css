@@ -9,6 +9,7 @@
 
 .habilidades-container h2, .habilidades-container h3 {
     justify-self: center;
+    text-shadow: 1px 1px 2px var(--cor-principal);
 }
 
 .badge-container {
