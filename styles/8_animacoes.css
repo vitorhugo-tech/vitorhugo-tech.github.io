@@ -1,0 +1,39 @@
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px) skewX(-10deg) rotate(-5deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) skewX(-3deg) rotate(-3deg);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px) skewX(-10deg) rotate(-5deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) skewX(-3deg) rotate(-3deg);
+    }
+}
+
+@keyframes float {
+    from {
+        transform: rotate(-2deg) translateY(0) skewX(-3deg);
+    }
+    to {
+        transform: rotate(-1deg) translateY(-5px) skewX(-3deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-1deg);
+    }
+    to {
+        transform: rotate(1deg);
+    }
+}

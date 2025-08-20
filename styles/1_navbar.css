@@ -1,0 +1,25 @@
+nav {
+    position: fixed;
+    inset: 0 auto auto 0;
+    width: 100%;
+    background: var(--cor-principal);
+    border-bottom: 3px solid var(--cor-auxiliar);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 999;
+}
+
+nav a {
+    color: var(--cor-realce);
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background: var(--cor-auxiliar);
+    color: var(--cor-principal);
+}
