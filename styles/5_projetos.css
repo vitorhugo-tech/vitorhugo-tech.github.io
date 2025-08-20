@@ -5,7 +5,7 @@
     min-height: calc(100vh - 60px);
 }
 
-#projetos  h3, #projetos p{
+#projetos  h3, #projetos p {
     text-shadow: 1px 1px 2px var(--cor-principal);
 }
 

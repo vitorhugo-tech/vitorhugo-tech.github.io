@@ -7,11 +7,8 @@
     margin-bottom: 10px;
 }
 
-#contato p {
-    margin-bottom: 40px;
-}
 .contato-info {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .contato-info a {
@@ -41,7 +38,7 @@
 }
 
 .contato-form input, .contato-form textarea {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     padding: 12px;
     border: 1px solid var(--cor-realce);
     border-radius: 6px;
@@ -69,4 +66,8 @@
 
 .contato-form button:hover {
     filter: saturate(0.8);
+}
+
+#contato i {
+    font-size: 1.8rem;
 }
