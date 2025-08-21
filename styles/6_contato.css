@@ -1,5 +1,6 @@
 #contato {
     padding: 0px 20px;
+    background-color: var(--cor-principal);
 }
 
 #contato h2 {
@@ -66,6 +67,9 @@
 
 .contato-form button:hover {
     filter: saturate(0.8);
+    box-shadow: 0 4px 12px red;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform: translateY(-5px);
 }
 
 #contato i {

@@ -2,7 +2,8 @@
     padding: 0 20px 20px 20px;
     width: 60%;
     align-self: center;
-    background-color: dimgrey;
+    background-color: var(--cor-auxiliar);
+    filter: saturate(0.6);
     border: 2px solid var(--cor-realce);
     border-radius: 15px;
 }

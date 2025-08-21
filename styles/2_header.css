@@ -4,8 +4,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* TODO: substituir por um background mais elaborado */
-    background-color: dimgrey;
 }
 
 header > div {
