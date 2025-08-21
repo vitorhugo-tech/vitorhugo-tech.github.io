@@ -29,13 +29,13 @@
   filter: saturate(0.6);
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 4px 12px var(--cor-auxiliar);
+  box-shadow: 0 4px 12px red;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .projeto-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px var(--cor-auxiliar);
+  box-shadow: 0 8px 20px red;
 }
 
 .projeto-thumb {

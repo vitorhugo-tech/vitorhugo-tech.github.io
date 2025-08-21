@@ -1,12 +1,11 @@
 #sobre > div {
   background: var(--cor-principal);
   padding: 30px;
-  margin: 100px auto;
+  margin: 30px auto;
   border-left: 12px solid var(--cor-auxiliar);
-  box-shadow: 6px 6px 0 10px var(--cor-realce);
   width: 80%;
   max-width: 600px;
-  position: relative;
+  height: fit-content;
   transform: skewX(-1deg) rotate(-3deg);
   animation: morph 4s ease-in-out infinite alternate, morphShadow 5s ease-in-out infinite alternate;
 }

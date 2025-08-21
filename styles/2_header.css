@@ -10,6 +10,24 @@ header > div {
   padding: 60px 0;
 }
 
+header a {
+  background: var(--cor-realce);
+  color: var(--cor-principal);
+  padding: 5px;
+  margin: 20px 10px;
+  font-weight: bold;
+  border: 3px solid var(--cor-principal);
+  box-shadow: 5px 5px 0 var(--cor-auxiliar);
+  transform: rotate(-2deg) skewX(-3deg);
+  animation: fadeInRight 1s ease-out forwards,
+    float 5s ease-in-out infinite alternate;
+  animation-delay: 0s, 1s;
+}
+
+header i {
+  font-size: 1.5rem;
+}
+
 header div {
   display: flex;
   justify-content: center;
