@@ -61,3 +61,21 @@
     background-position: 0% 50%;
   }
 }
+
+@keyframes morph {
+  from {
+    transform: skewX(-1deg) rotate(-1deg);
+  }
+  to {
+    transform: skewX(1deg) rotate(1deg);
+  }
+}
+
+@keyframes morphShadow {
+  from {
+    box-shadow: 6px 6px 0 10px var(--cor-realce);
+  }
+  to {
+    box-shadow: 10px 0 6px 6px var(--cor-realce);
+  }
+}
