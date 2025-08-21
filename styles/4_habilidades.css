@@ -1,35 +1,36 @@
 #habilidades > div {
-    padding: 0 20px 20px 20px;
-    width: 60%;
-    align-self: center;
-    background-color: var(--cor-auxiliar);
-    filter: saturate(0.6);
-    border: 2px solid var(--cor-realce);
-    border-radius: 15px;
+  padding: 0 20px 20px 20px;
+  width: 60%;
+  align-self: center;
+  background-color: var(--cor-auxiliar);
+  filter: saturate(0.6);
+  border: 2px solid var(--cor-realce);
+  border-radius: 15px;
 }
 
-.habilidades-container h2, .habilidades-container h3 {
-    justify-self: center;
-    text-shadow: 1px 1px 2px var(--cor-principal);
+.habilidades-container h2,
+.habilidades-container h3 {
+  justify-self: center;
+  text-shadow: 1px 1px 2px var(--cor-principal);
 }
 
 .badge-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
 }
 
 .badge {
-    color: var(--cor-principal);
-    background: var(--cor-realce);
-    padding: 8px 14px;
-    border-radius: 20px;
-    box-shadow: 0 2px 5px var(--cor-principal);
-    font-size: 0.8rem;
-    transition: transform 0.2s ease;
+  color: var(--cor-principal);
+  background: var(--cor-realce);
+  padding: 8px 14px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px var(--cor-principal);
+  font-size: 0.8rem;
+  transition: transform 0.2s ease;
 }
 
 .badge:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }

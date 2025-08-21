@@ -1,77 +1,78 @@
 #contato {
-    padding: 0px 20px;
-    background-color: var(--cor-principal);
+  padding: 0px 20px;
+  background-color: var(--cor-principal);
 }
 
 #contato h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 .contato-info {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .contato-info a {
-    font-size: 2rem;
-    color: var(--cor-realce);
-    padding: 10px;
-    text-decoration: none;
+  font-size: 2rem;
+  color: var(--cor-realce);
+  padding: 10px;
+  text-decoration: none;
 }
 
 .contato-info a:hover {
-    filter: brightness(0.7);
+  filter: brightness(0.7);
 }
 
 .contato-container {
-    margin: 0 auto;
-    text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .contato-form {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .contato-form label {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
-.contato-form input, .contato-form textarea {
-    margin-bottom: 15px;
-    padding: 12px;
-    border: 1px solid var(--cor-realce);
-    border-radius: 6px;
-    font-size: 1rem;
-    font-family: sans-serif;
-    background-color: dimgrey;
-    color: var(--cor-realce);
+.contato-form input,
+.contato-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid var(--cor-realce);
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: sans-serif;
+  background-color: dimgrey;
+  color: var(--cor-realce);
 
-    &::placeholder {
-        color: #969696ff;
-    }
+  &::placeholder {
+    color: #969696ff;
+  }
 }
 
 .contato-form button {
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    background: var(--cor-auxiliar);
-    color: var(--cor-realce);
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: var(--cor-auxiliar);
+  color: var(--cor-realce);
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 .contato-form button:hover {
-    filter: saturate(0.8);
-    box-shadow: 0 4px 12px red;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    transform: translateY(-5px);
+  filter: saturate(0.8);
+  box-shadow: 0 4px 12px red;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform: translateY(-5px);
 }
 
 #contato i {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }

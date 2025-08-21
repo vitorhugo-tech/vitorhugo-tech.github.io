@@ -1,43 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('1_navbar.css');
-@import url('2_header.css');
-@import url('3_sobre.css');
-@import url('4_habilidades.css');
-@import url('5_projetos.css');
-@import url('6_contato.css');
-@import url('7_endpage.css');
-@import url('8_animacoes.css');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("1_navbar.css");
+@import url("2_header.css");
+@import url("3_sobre.css");
+@import url("4_habilidades.css");
+@import url("5_projetos.css");
+@import url("6_contato.css");
+@import url("7_endpage.css");
+@import url("8_animacoes.css");
 
 :root {
-    --cor-principal: #000;
-    --cor-auxiliar: #f00;
-    --cor-realce: #fff;
+  --cor-principal: #000;
+  --cor-auxiliar: #f00;
+  --cor-realce: #fff;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--cor-principal);
-    color: var(--cor-realce);
-    font-family: 'Anton', sans-serif;
-    margin: 0;
-    letter-spacing: 0.7px;
+  background-color: var(--cor-principal);
+  color: var(--cor-realce);
+  font-family: "Anton", sans-serif;
+  margin: 0;
+  letter-spacing: 0.7px;
 }
 
 i {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
-h2, h3 {
-    margin: 10px 0;
+h2,
+h3 {
+  margin: 10px 0;
 }
 
 section:not(#projetos) {
-    scroll-margin-top: 60px;
-    margin-bottom: 60px;
-    min-height: calc(100vh - 60px);
-    display: flex;
-    justify-content: center;
+  scroll-margin-top: 60px;
+  margin-bottom: 60px;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
 }
