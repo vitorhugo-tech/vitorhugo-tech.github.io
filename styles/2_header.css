@@ -37,7 +37,7 @@ header div {
 #foto {
   border: 2px solid var(--cor-realce);
   border-radius: 50%;
-  margin-right: 30px;
+  margin: 0 30px;
   animation: rotate 3s ease-in-out infinite alternate;
 }
 
@@ -70,4 +70,31 @@ header div {
     float 4s ease-in-out infinite alternate;
   animation-delay: 0s, 1s;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding-top: 30px;
+  }
+
+  header img {
+    height: 150px;
+    width: 150px;
+  }
+
+  header > div {
+    flex-direction: column;
+  }
+
+  #titulo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #titulo {
+    padding: 20px 30px;
+    font-size: 2em;
+    letter-spacing: 2px;
+  }
 }

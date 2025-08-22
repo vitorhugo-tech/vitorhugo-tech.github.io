@@ -1,6 +1,6 @@
 #habilidades > div {
   padding: 0 20px 20px 20px;
-  width: 60%;
+  margin: 0 20px;
   align-self: center;
   background-color: var(--cor-auxiliar);
   filter: saturate(0.6);
@@ -11,6 +11,7 @@
 .habilidades-container h2,
 .habilidades-container h3 {
   justify-self: center;
+  text-align: center;
   text-shadow: 1px 1px 2px var(--cor-principal);
 }
 
@@ -33,4 +34,10 @@
 
 .badge:hover {
   transform: scale(1.05);
+}
+
+@media (min-width: 769px) {
+  #habilidades > div {
+    width: 60%;
+  }
 }
