@@ -24,6 +24,11 @@ header a {
   animation-delay: 0s, 1s;
 }
 
+header a:hover {
+  transition: margin 100ms;
+  margin-top: 5px;
+}
+
 header i {
   font-size: 1.5rem;
 }

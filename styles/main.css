@@ -9,7 +9,7 @@
 @import url("8_animacoes.css");
 
 :root {
-  --cor-principal: #000;
+  --cor-principal: #2e2e2e;
   --cor-auxiliar: #f00;
   --cor-realce: #fff;
 }
@@ -41,4 +41,8 @@ section:not(#projetos) {
   min-height: calc(100vh - 60px);
   display: flex;
   justify-content: center;
+}
+
+.devicon-angular-plain {
+  color: black;
 }
