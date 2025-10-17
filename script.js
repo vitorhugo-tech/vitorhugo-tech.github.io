@@ -25,3 +25,54 @@ navLinks.addEventListener("click", () => {
     xmark.classList.toggle("active");
     bars.classList.toggle("active");
 });
+
+// Envia e-mail
+function sendEmail() {
+    const form = document.getElementById("contato-form")
+    const alertBox = document.getElementById("alert");
+    const alertMsg = document.getElementById("alert-text");
+
+    if (!form.checkValidity()) {
+        alertBox.style.display = "flex";
+        alertMsg.innerText = "Certifique-se de que todos os campos são válidos para poder enviar"
+        return;
+    }
+
+    const sender   = document.getElementById("name").value;
+    const email    = document.getElementById("email").value;
+    const message  = document.getElementById("message").value;
+
+    fetch("https://formsubmit.co/ajax/vitorhugo-57@hotmail.com", {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            name: sender,
+            email: email,
+            message: message
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        alertBox.classList.add("success");
+        alertBox.style.display = "flex";
+        alertMsg.innerText = "E-mail enviado com sucesso!"
+    })
+    .catch(error => {
+        console.log(error)
+        alertBox.style.display = "flex";
+        alertMsg.innerText = "Ocorreu um erro! Tente novamente mais tarde."
+    });
+}
+
+const sendBtn = document.getElementById("sendBtn");
+sendBtn.addEventListener("click", () => sendEmail());
+
+const closeBtn = document.getElementById("closeBtn");
+closeBtn.addEventListener("click", () => {
+    const alertBox = document.getElementById("alert");
+    alertBox.style.display = "none";
+    alertBox.classList.remove("success");
+});

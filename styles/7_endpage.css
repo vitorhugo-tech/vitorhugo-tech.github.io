@@ -13,7 +13,7 @@
   box-shadow: 0 4px 6px var(--cor-principal);
   transition: background-color 0.3s, transform 0.3s;
   text-decoration: none;
-  z-index: 1000;
+  z-index: 999;
 }
 
 #scrollTopBtn:hover {

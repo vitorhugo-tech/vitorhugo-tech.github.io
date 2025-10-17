@@ -39,7 +39,7 @@ nav a:hover {
   gap: 20px;
 }
 
-/* Toggle button */
+/* Mobile */
 #menu-toggle {
   display: none;
   cursor: pointer;
@@ -48,7 +48,8 @@ nav a:hover {
 
 @media (max-width: 768px) {
   #menu-toggle {
-    display: block;
+    display: flex;
+    margin-left: auto;
   }
 
   #nav-links {

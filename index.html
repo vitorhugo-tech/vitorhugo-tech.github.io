@@ -224,7 +224,7 @@
                         </a>
                     </div>
 
-                    <form class="contato-form" action="https://formsubmit.co/382abe82ecdb0388febaf81345b8cd7d" method="POST">
+                    <form id="contato-form">
                         <label for="name">Nome</label>
                         <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
 
@@ -234,12 +234,16 @@
                         <label for="message">Mensagem</label>
                         <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem" required></textarea>
 
-                        <button type="submit">Enviar</button>
+                        <button type="button" id="sendBtn">Enviar</button>
                     </form>
                 </div>
             </div>
         </section>
         <a id="scrollTopBtn" href="#inicio" title="Go to top">&#x1F809;</a>
+        <div id="alert">
+            <div id="alert-text">Texto</div>
+            <span id="closeBtn"><i class="fa-solid fa-xmark-circle"></i></span>
+        </div>
     </main>
     <footer>
         <p>Desenvolvido por Vitor Hugo - 2025</p>
